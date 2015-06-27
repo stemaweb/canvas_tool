@@ -16,15 +16,18 @@
                 "draggable": "true"
             }
         },
-        "textField": {
-            "prototype": "montage/ui/text-field.reel",
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "textField"},
+                "element": {"#": "repetition"},
+                "content": [
+                    "",
+                    ""
+                ],
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "enabled": true,
-                "value": "2"
+                "isSelectionEnabled": false
             }
         }
     }
@@ -35,7 +38,9 @@
         @condition
         @condition
         @condition
-        <input data-montage-id="textField" type="text">
+        <ul data-montage-id="repetition">
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
