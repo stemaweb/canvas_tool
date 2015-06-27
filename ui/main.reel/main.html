@@ -16,14 +16,15 @@
                 "draggable": "true"
             }
         },
-        "condition": {
-            "prototype": "montage/ui/condition.reel",
+        "textField": {
+            "prototype": "montage/ui/text-field.reel",
             "properties": {
-                "element": {"#": "condition"},
+                "element": {"#": "textField"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "removalStrategy": "hide"
+                "enabled": true,
+                "value": ""
             }
         }
     }
@@ -31,7 +32,10 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <div data-montage-id="condition"></div>
+        @condition
+        @condition
+        @condition
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
