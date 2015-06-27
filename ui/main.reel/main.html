@@ -15,11 +15,23 @@
                 "dir": "ltr",
                 "draggable": "true"
             }
+        },
+        "condition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "condition"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "removalStrategy": "hide"
+            }
         }
     }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div data-montage-id="condition"></div>
+    </div>
 </body>
 </html>
